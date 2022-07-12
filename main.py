@@ -14,7 +14,10 @@
 #     Find the minimal path sum from the top left to the bottom right by only moving right and down
 #       in matrix.txt (right click and "Save Link/Target As..."), a 31K text file containing an 80 by 80 matrix.
 
-def main(filename):
+from typing import List, Tuple
+
+
+def main(filename: str) -> Tuple[int, List[str]]:
     """
     Returns the minimal path sum in the given `filename`
       walking from the top-left to the bottom-right of the matrix,
